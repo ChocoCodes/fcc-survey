@@ -7,6 +7,43 @@
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <h1 id="title" class="header">FCC Bootcamp</h1>
+    <p id="description" class="header">Help us improve our future workshops by answering!</p>
+    <form action="submit" id="survey-form">
+        <fieldset>
+            <legend id="information">Basic Information</legend>
+            <label for="name" id="name-label">Participant Name</label>
+            <input type="text" id="name" placeholder="Name here..." required>
+            <label for="email" id="email-label">Email Address</label>
+            <input type="email" id="email" placeholder="Email here..." required="required">
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Age here..." required="required" min="13" max="80">
+        </fieldset>
+        <fieldset>
+            <legend id="information">Other Information</legend>
+            <label for="dropdown" id="dropdown-label">What is your occupation?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="" disabled>Select an option</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+            <p id="radio-label">Would you attend another bootcamp session with us?</p>
+            <label class="radio" for="yes"><input type="radio" class="radio" id="yes" name="attendance" value="yes"/>Yes</label>
+            <label class="radio" for="no"><input type="radio" class="radio" id="no" name="attendance" value="no"/>No</label>
+            <label class="radio" for="maybe"><input type="radio" class="radio" id="maybe" name="attendance" value="maybe"/>Maybe</label>
+            <p id="radio-label">What topic/s would you like to see?</p>
+            <label class="check" for="full-stack"><input type="checkbox" id="full-stack" name="preference" value="full-stack"/>Full-Stack</label>
+            <label class="check" for="database"><input type="checkbox" id="database" name="preference" value="database"/>Relational Database</label>
+            <label class="check" for="machine-learning"><input type="checkbox" id="machine-learning" name="preference" value="machine-learning"/>Machine Learning</label>
+            <label class="check" for="blockchain"><input type="checkbox" id="blockchain" name="preference" value="blockchain"/>Blockchain</label>
+            <label class="check" for="quantum-computing"><input type="checkbox" id="quantum-computing" name="preference" value="quantum-computing"/>Quantum Computing</label>
+        </fieldset>
+        <fieldset>
+            <legend>Takeaways</legend>
+            <label for="learnings"><textarea name="learnings" id="learnings" placeholder="I learned about..." rows="3" cols="30"></textarea></label>
+            <button type="submit" id="submit">Submit</button>
+        </fieldset>
+    </form>
 </body>
 </html>

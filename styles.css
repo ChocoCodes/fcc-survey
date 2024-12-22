@@ -1,0 +1,102 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('assets/bg.png') no-repeat center center/cover;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+}
+
+#title {
+    margin: 1.5rem 0 0.5rem 0;
+    font: normal bold 2.5em/1 'Google Sans', sans-serif;
+}
+
+#description {
+    margin-bottom: 1.5rem;
+}
+
+input {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font: normal  1rem/normal 'Google Sans', sans-serif;
+}
+
+fieldset {
+    border: none;
+    margin-left: 5%;
+    padding-bottom: 0.75rem;
+}
+
+form, h1, p{
+    color: #ffffff;
+    font: normal  1rem/normal 'Google Sans', sans-serif;
+}
+
+.radio {
+    display: inline;
+}
+
+form {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 45vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+}
+
+#information {
+    text-align: center;
+    font: normal bold 1.5rem/normal 'Google Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+    width: 90%;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+textarea {
+    width: 90%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    margin-bottom: 1rem;
+}
+
+#information:first-of-type {
+    padding-top: 5px;
+}
+
+#radio-label {
+    margin-bottom: 5px;
+    margin-top: 1rem;
+}
+
+#submit {
+    padding: 0.5rem 0.5rem;
+    font: normal bold 1rem/normal 'Google Sans', sans-serif;
+    margin: 1rem auto 0;
+}
